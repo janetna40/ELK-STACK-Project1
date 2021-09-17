@@ -84,3 +84,63 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - What is the main advantage of automating configuration with Ansible?
  - One of the main advatages is that it helps prevent human error with no manual configuration done and allowing automation configuration of the machine.  
 
+The playbook implements the following tasks:
+
+Installing Filebeat
+-Downloaded and installed Filebeat
+-Edited and copied the filebeat configuration
+-Setup file beat
+-Started and enabled the Filebeat service 
+
+Installing ELK
+-Downloaded and launched the docker container for the ELK stack 
+-Installed docker.io package using apt command 
+-Installed the docker module using pip command 
+-Installed python3-pip package manager using apt
+-Configured the Virtual Machines to use more using the sysctl module
+
+Installing Metricbeat 
+-Setup Metricbeat
+-Downloaded and installed Metricbear
+-Edited and copied the Metricbeat configuration
+-Emabled the Metricbeat docker module 
+-Started and enabled the Metricbeat service
+
+
+The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+
+<img width="1625" alt="Docker_ps_screenshot" src="https://user-images.githubusercontent.com/85567847/133864145-cb1bd722-8759-48a1-ac11-699beeb95198.png">
+
+
+   
+### Target Machines & Beats
+This ELK server is configured to monitor the following machines:
+| Web-1                 | 10.0.0.5             |
+| Web-2                | 10.0.0.6             |
+
+
+We have installed the following Beats on these machines:
+ Specify which Beats you successfully installed:
+ -Filebeat and Metricbeat
+
+These Beats allow us to collect the following information from each machine:
+--Filebeat forwards and centralizes log data. It also monitors log files, collects log events and forwards the information/data for indexing. -Metricbeat collects metric data from the target servers such as CPU/memory data, Inbound traffic data, and disk usage.
+
+
+### Using the Playbook
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+
+SSH into the control node and follow the steps below:
+- Copy the playbook files to the specific directory needed to run the playbooks. the directory is     /etc/ansible/roles.
+
+- I update the host file to include the elkservers group along with the correspinding IP adresses. I also had to create a webservers group with the corresponding IP adresses of the target machines.
+
+Example provided below below:
+
+<img width="561" alt="Screen Shot 2021-09-17 at 6 36 33 PM" src="https://user-images.githubusercontent.com/85567847/133863952-ff2a1bbe-a55d-4f7a-aa5e-ba79805a1a8b.png">
+
+
+
+- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+
+
