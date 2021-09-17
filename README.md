@@ -82,5 +82,5 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 - What is the main advantage of automating configuration with Ansible?
- - One of the main advatages is that it helps prevent human error with no manual configuratiobn done and allowing automation configuration of the machine.  
+ - One of the main advatages is that it helps prevent human error with no manual configuration done and allowing automation configuration of the machine.  
 
