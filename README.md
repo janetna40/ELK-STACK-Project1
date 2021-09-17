@@ -7,7 +7,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible files to follow; may be used to install only certain pieces of it, such as Filebeat.
 
-filebeat-playbook.yml (https://github.com/janetna40/ELK-STACK-Project1/blob/6a4c48292ecbc29e0bf9e038aeec88c87671a848/Ansible/filebeat-playbook.yml) (Installs and configures Filebeat on the target machines)
+filebeat-playbook.yml (Ansible/filebeat-playbook.yml) Installs and configures Filebeat on the target machines)
 
 metricbeat-playbook.yml (Installs and configures Metricbeat on the target machines)
 
@@ -29,18 +29,18 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly effective and efficient, in addition to restricting traffic to the network.
 What aspect of security do load balancers protect? 
-	- Load balancers help distribute traffic evenly across the servers and help mitigate DoS attacks.
+		- Load balancers help distribute traffic evenly across the servers and help mitigate DoS attacks.
 
 What is the advantage of a jump box?
-	- One advatage of a Jumpbox is that a user can focus on a few connections between a few machines, rather than connections between all machines. By having a single node gateway router, this forces all network traffic through a router that is secured and monitored.
+		- One advatage of a Jumpbox is that a user can focus on a few connections between a few machines, rather than connections between all machines. By having a single node gateway router, this forces all network traffic through a router that is secured and monitored.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the system logs and system metrics/data.
 
 What does Filebeat watch for?
-	-Filebeat forwards and centralizes log data. It also monitors log files, collects log events and forwards the information/data for indexing.
+		-Filebeat forwards and centralizes log data. It also monitors log files, collects log events and forwards the information/data for indexing.
 	
 What does Metricbeat record?
-	-Metricbeat collects metric data from the target servers such as CPU/memory data, 
+		-Metricbeat collects metric data from the target servers such as CPU/memory data, 
 	Inbound traffic data, and disk usage.
 
 The configuration details of each machine may be found below.
