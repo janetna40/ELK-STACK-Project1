@@ -115,8 +115,9 @@ The following screenshot displays the result of running `docker ps` after succes
    
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
+
 | Web-1                 | 10.0.0.5             |
-| Web-2                | 10.0.0.6             |
+| Web-2                 | 10.0.0.6             |
 
 
 We have installed the following Beats on these machines:
@@ -140,7 +141,28 @@ Example provided below below:
 <img width="561" alt="Screen Shot 2021-09-17 at 6 36 33 PM" src="https://user-images.githubusercontent.com/85567847/133863952-ff2a1bbe-a55d-4f7a-aa5e-ba79805a1a8b.png">
 
 
+- Run the playbook, and navigate to Kibana to check that the installation worked as expected.
+I used the IP address for the ELK-VM with port 5601/app/kibana in the web browser/ if its successful it should run and open up kibana as shown below
 
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+<img width="1552" alt="Screen Shot 2021-09-16 at 9 02 38 PM" src="https://user-images.githubusercontent.com/85567847/133864923-70da69e1-8506-4a0b-ac17-6064dddb78ea.png">
+
+
+Answer the following questions to fill in the blanks:
+
+Which file is the playbook? Where do you copy it?
+
+Filebeat-playbook and copy I copied it to /etc/ansible/roles
+
+Which file do you update to make Ansible run the playbook on a specific machine? 
+
+Filebeat-config.yml
+
+How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+To specify, the config files can manipulated to specify which machines (IP ADDRESSES) we want them to run
+
+Which URL do you navigate to in order to check that the ELK server is running? 
+
+IP address for the ELK-VM with port 5601/app/kibana Ex. IP ADDRESS FOR ELK SERVER:5601/app/kibana
+
 
 
