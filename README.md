@@ -166,3 +166,20 @@ IP address for the ELK-VM with port 5601/app/kibana Ex. IP ADDRESS FOR ELK SERVE
 
 
 
+Commands needed to run the Ansible Configuration for the ELK Server are:
+
+| Commands              Explanation        
+
+|----------------------|-------------------|
+
+| SSH azjanetna@Jumpbox (Public IP) | connection from local machine to Jumpbox              
+| sudo apt-get update               | updates all packages                         
+| sudo apt install docker.io        | installs docker application                   
+| sudo docker start (name)          | starts the docker application               
+| sudo docker pull cyberxsecurity/ansible  |   downloads the docker
+
+| ssh-keygen                   | creates a ssh key                               
+
+
+
+
